@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Volume"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#16B3FA" />
+
+    <!-- Child RelativeLayout for Volume Controls -->
+    <RelativeLayout
+        android:id="@+id/volumeControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="23dp">
+
+        <!-- Ringtone Volume Text -->
+        <TextView
+            android:id="@+id/tvRingtone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:text="Ringtone Volume"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ringtone SeekBar -->
+        <SeekBar
+            android:id="@+id/seekBarRingtone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRingtone"
+            android:layout_marginTop="10dp"
+            android:progressTint="#673AB7"
+            android:thumbTint="#00DCF8"
+            />
+
+        <!-- Media Volume Text -->
+        <TextView
+            android:id="@+id/tvMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBarRingtone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Media Volume"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Media SeekBar -->
+        <SeekBar
+            android:id="@+id/seekBarMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMedia"
+            android:layout_marginTop="10dp"
+            android:progressTint="#673AB7"
+            android:thumbTint="#00DCF8"
+            />
+
+        <!-- Alarm Volume Text -->
+        <TextView
+            android:id="@+id/tvAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBarMedia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Alarm Volume"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Alarm SeekBar -->
+        <SeekBar
+            android:id="@+id/seekBarAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAlarm"
+            android:layout_marginTop="10dp"
+            android:progressTint="#673AB7"
+            android:thumbTint="#00DCF8"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
