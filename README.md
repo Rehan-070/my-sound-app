@@ -1,1 +1,1 @@
-My Sound Demo Android App
+My Sound Demo Android App for Android Application practice 
